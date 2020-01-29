@@ -1,0 +1,32 @@
+p:hover {
+    font-size: 20px;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.firstDiv {
+    background-color: green;
+}
+
+.secondDiv {
+    background-color: red;
+}
+
+.threeDiv {
+    background-color: blue;
+}
+
+.myCalendar {
+    color: tomato;
+    font-size: 50px;
+}
