@@ -25,8 +25,8 @@
   font-size: @size;
 }
 
-.btnDownload() {
-  border: 1px solid @wite;
+.btnDownload(@witeBtn: @wite, @backColorHover: @wite, @blackBtn:@black) {
+  border: 1px solid @witeBtn;
   width: 67px;
   padding: 10px 30px;
   a {
@@ -35,9 +35,9 @@
     color: @wite;
   }
   &:hover {
-    background-color: @wite;
+    background-color: @backColorHover;
     a {
-      color: @black;
+      color: @blackBtn;
     }
   }
 }
@@ -77,7 +77,7 @@
   }
 }
 
-.btnForma(@hover_color;) {
+.btnForma() {
   border: none;
   background-color: @orange;
   width: 100%;
@@ -204,6 +204,46 @@
 
     ul {
       display: none;
+    }
+  }
+}
+
+.radio() {
+  display: flex;
+  input {
+    appearance: none;
+    border: 1px solid @black_two;
+    background-color: @black_two;
+    width: 0%;
+    padding: 50px;
+    border-radius: 5%;
+    cursor: pointer;
+    margin: 1px 0;
+
+    &:checked {
+      border: 1px solid @orange;
+      background-color: @orange;
+    }
+
+    &:checked ~ .tab_text {
+      display: block;
+      width: 50%;
+      margin-left: 150px;
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      content: "Tab1";
+      color: #fff;
+      position: relative;
+      margin: 0px auto;
+      left: -17px;
+      text-transform: uppercase;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }

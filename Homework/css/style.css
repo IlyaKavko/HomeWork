@@ -93,7 +93,7 @@ body .header_conteiner .header_content {
   margin: 0 auto;
   display: flex;
   padding-top: 165px;
-  padding-bottom: 238px;
+  padding-bottom: 179px;
 }
 body .header_conteiner .header_content .content_header h2 {
   font-size: 36px;
@@ -343,4 +343,177 @@ body .header_conteiner .header_forma form .btn button:hover {
     font-size: 13px;
     padding: 18px 0;
   }
+}
+body .brand_bar {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+}
+body .brand_bar .brand_bar_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+body .brand_bar .brand_bar_content .brand_bar_text {
+  width: 34%;
+}
+body .brand_bar .brand_bar_content .brand_bar_text h4 {
+  margin-bottom: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+body .brand_bar .brand_bar_content .brand_bar_text p {
+  margin-top: 5px;
+  color: #bfbdbe;
+  font-size: 14px;
+}
+body .brand_bar .brand_bar_content .brand_bar_social {
+  margin-top: 26px;
+}
+body .brand_bar .brand_bar_content .brand_bar_social a {
+  font-size: 48px;
+  color: #bfbdbe;
+}
+body .brand_bar .brand_bar_content .brand_bar_social a:not(:last-child) {
+  padding-right: 63px;
+}
+body .brand_bar .brand_bar_content .brand_bar_social a:hover {
+  color: #ff8b38;
+}
+body .features .features_content {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 114px;
+  margin-bottom: 114px;
+}
+body .features .features_content .features_tab .tab_one {
+  display: flex;
+}
+body .features .features_content .features_tab .tab_one .tab_text {
+  display: none;
+}
+body .features .features_content .features_tab .tab_one .tab_text .download {
+  border: 1px solid #ff8b38;
+  width: 67px;
+  padding: 10px 30px;
+  background-color: #ff8b38;
+}
+body .features .features_content .features_tab .tab_one .tab_text .download a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+body .features .features_content .features_tab .tab_one .tab_text .download:hover {
+  background-color: #d2600f;
+}
+body .features .features_content .features_tab .tab_one .tab_text .download:hover a {
+  color: #fff;
+}
+body .features .features_content .features_tab .tab_one input {
+  appearance: none;
+  border: 1px solid #333;
+  background-color: #333;
+  width: 0%;
+  padding: 50px;
+  border-radius: 5%;
+  cursor: pointer;
+  margin: 1px 0;
+}
+body .features .features_content .features_tab .tab_one input:checked {
+  border: 1px solid #ff8b38;
+  background-color: #ff8b38;
+}
+body .features .features_content .features_tab .tab_one input:checked ~ .tab_text {
+  display: block;
+  width: 50%;
+  margin-left: 150px;
+  position: absolute;
+  top: 0;
+}
+body .features .features_content .features_tab .tab_one input::after {
+  content: "Tab1";
+  color: #fff;
+  position: relative;
+  margin: 0px auto;
+  left: -17px;
+  text-transform: uppercase;
+}
+body .features .features_content .features_tab .tab_one input:focus {
+  outline: none;
+}
+body .features .features_content .features_tab .tab_two {
+  display: flex;
+}
+body .features .features_content .features_tab .tab_two .tab_text {
+  display: none;
+}
+body .features .features_content .features_tab .tab_two input {
+  appearance: none;
+  border: 1px solid #333;
+  background-color: #333;
+  width: 0%;
+  padding: 50px;
+  border-radius: 5%;
+  cursor: pointer;
+  margin: 1px 0;
+}
+body .features .features_content .features_tab .tab_two input:checked {
+  border: 1px solid #ff8b38;
+  background-color: #ff8b38;
+}
+body .features .features_content .features_tab .tab_two input:checked ~ .tab_text {
+  display: block;
+  width: 50%;
+  margin-left: 150px;
+  position: absolute;
+  top: 0;
+}
+body .features .features_content .features_tab .tab_two input::after {
+  content: "Tab1";
+  color: #fff;
+  position: relative;
+  margin: 0px auto;
+  left: -17px;
+  text-transform: uppercase;
+}
+body .features .features_content .features_tab .tab_two input:focus {
+  outline: none;
+}
+body .features .features_content .features_tab .tab_tree {
+  display: flex;
+}
+body .features .features_content .features_tab .tab_tree .tab_text {
+  display: none;
+}
+body .features .features_content .features_tab .tab_tree input {
+  appearance: none;
+  border: 1px solid #333;
+  background-color: #333;
+  width: 0%;
+  padding: 50px;
+  border-radius: 5%;
+  cursor: pointer;
+  margin: 1px 0;
+}
+body .features .features_content .features_tab .tab_tree input:checked {
+  border: 1px solid #ff8b38;
+  background-color: #ff8b38;
+}
+body .features .features_content .features_tab .tab_tree input:checked ~ .tab_text {
+  display: block;
+  width: 50%;
+  margin-left: 150px;
+  position: absolute;
+  top: 0;
+}
+body .features .features_content .features_tab .tab_tree input::after {
+  content: "Tab1";
+  color: #fff;
+  position: relative;
+  margin: 0px auto;
+  left: -17px;
+  text-transform: uppercase;
+}
+body .features .features_content .features_tab .tab_tree input:focus {
+  outline: none;
 }

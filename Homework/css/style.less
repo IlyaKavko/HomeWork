@@ -46,7 +46,7 @@ body {
     .header_content {
       .autoContent();
       padding-top: 165px;
-      padding-bottom: 238px;
+      padding-bottom: 179px;
       .content_header {
         h2 {
           font-size: 36px;
@@ -96,7 +96,7 @@ body {
 
         .btn {
           button {
-            .btnForma(#d2600f;);
+            .btnForma();
           }
         }
       }
@@ -132,18 +132,88 @@ body {
           }
 
           .download {
-            margin: 0 auto
+            margin: 0 auto;
           }
         }
         .header_forma {
           width: 100%;
           margin-top: 20px;
           p {
-            text-align: center
+            text-align: center;
           }
         }
       }
       .mediaHeader(95%, 100%, 175px, 19px, 40px, 10px, 12px, 15px, 16px, 15px, 20px, 10px, 31px, 14px, 9px, 18px, 13px);
+    }
+  }
+
+  .brand_bar {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+
+    .brand_bar_content {
+      .autoContent();
+
+      .brand_bar_text {
+        width: 34%;
+        h4 {
+          margin-bottom: 0;
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+
+        p {
+          margin-top: 5px;
+          .default_text();
+        }
+      }
+
+      .brand_bar_social {
+        margin-top: 26px;
+        a {
+          &:not(:last-child) {
+            padding-right: 63px;
+          }
+          font-size: 48px;
+          color: @text_color;
+          &:hover {
+            color: @orange;
+          }
+        }
+      }
+    }
+  }
+
+  .features {
+    .features_content {
+      position: relative;
+      .autoContent();
+      margin-top: 114px;
+      margin-bottom: 114px;
+
+      .features_tab {
+        .tab_one {
+          .tab_text {
+            display: none;
+            .download {
+              .btnDownload(@orange, @hover_color, @wite);
+              background-color: @orange;
+            }
+          }
+          .radio();
+        }
+        .tab_two {
+          .tab_text {
+            display: none;
+          }
+          .radio();
+        }
+        .tab_tree {
+          .tab_text {
+            display: none;
+          }
+          .radio();
+        }
+      }
     }
   }
 }
