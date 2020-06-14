@@ -1,11 +1,11 @@
 @import "./variable.less";
 
-.divider() {
+.divider(@backColor: @wite;) {
   content: "";
   display: block;
   width: 64px;
   height: 2px;
-  background-color: #fff;
+  background-color: @backColor;
   position: absolute;
   margin-top: 40px;
 }
