@@ -498,6 +498,76 @@ body {
         }
       }
     }
+
+    @media (min-width: 750px) and (max-width: 999px) {
+      .our_process_content {
+        width: 90%;
+        .our_process_header {
+          h2 {
+            font-size: 26px;
+
+            &::after {
+              margin: 10px auto;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+        .our_process_text {
+          padding-top: 63px;
+          .our_process_box {
+            h4 {
+              font-size: 15px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .our_process_content {
+        width: 90%;
+        .our_process_header {
+          h2 {
+            font-size: 26px;
+
+            &::after {
+              margin: 10px auto;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+        .our_process_text {
+          display: block;
+          padding-top: 63px;
+          .our_process_box {
+            &:not(:first-child) {
+              padding: 0;
+            }
+            h4 {
+              font-size: 15px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+
+            img {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
   }
 
   .pricing {
@@ -531,6 +601,151 @@ body {
         }
         .pricing_slot_tree {
           .slot();
+        }
+      }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1250px) {
+      .pricing_content {
+        .pricing_slot {
+          .pricing_slot_one {
+            width: 334px;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 750px) and (max-width: 999px) {
+      .pricing_content {
+        width: 90%;
+        .pricing_header {
+          h2 {
+            font-size: 26px;
+
+            &::after {
+              margin: 10px auto;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+        .pricing_slot {
+          padding-top: 63px;
+          .pricing_slot_one {
+            width: 334px;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
+          .pricing_slot_two {
+            width: 334px;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
+          .pricing_slot_tree {
+            width: 334px;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .pricing_content {
+        width: 90%;
+        .pricing_header {
+          h2 {
+            font-size: 26px;
+
+            &::after {
+              margin: 10px auto;
+            }
+          }
+
+          p {
+            font-size: 12px;
+          }
+        }
+        .pricing_slot {
+          display: block;
+          padding-top: 63px;
+          .pricing_slot_one {
+            width: 270px;
+            padding: 0;
+            margin: 0 auto;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
+          .pricing_slot_two {
+            width: 270px;
+            padding: 0;
+            margin: 0 auto;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
+          .pricing_slot_tree {
+            width: 270px;
+            padding: 0;
+            margin: 0 auto;
+            ul {
+              li {
+                font-size: 12px;
+                &:nth-child(1) {
+                  font-size: 15px;
+                }
+                &:nth-child(2) {
+                  font-size: 84px;
+                }
+              }
+            }
+          }
         }
       }
     }
