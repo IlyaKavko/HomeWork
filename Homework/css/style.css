@@ -1105,3 +1105,147 @@ body .pricing .pricing_content .pricing_slot .pricing_slot_tree ul li:nth-child(
     font-size: 84px;
   }
 }
+body .testimonials .testimonials_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  display: block;
+  padding-top: 114px;
+  padding-bottom: 114px;
+}
+body .testimonials .testimonials_content .testimonials_header {
+  text-align: center;
+}
+body .testimonials .testimonials_content .testimonials_header h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+body .testimonials .testimonials_content .testimonials_header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #ff8b38;
+  position: absolute;
+  margin-top: 40px;
+  position: static;
+  margin: 20px auto;
+}
+body .testimonials .testimonials_content .testimonials_header p {
+  margin: 0;
+  color: #bfbdbe;
+  font-size: 14px;
+}
+body .testimonials .testimonials_content .testimonials_commit {
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+}
+body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p {
+  width: 273px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  padding: 20px 13px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  color: #bfbdbe;
+  font-size: 14px;
+  font-style: italic;
+}
+body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: -20px;
+  border: 10px solid transparent;
+  border-top: 10px solid #f5f5f5;
+}
+body .testimonials .testimonials_content .testimonials_commit .avatar {
+  display: flex;
+}
+body .testimonials .testimonials_content .testimonials_commit .avatar img {
+  width: 70px;
+}
+body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information {
+  flex-direction: column;
+  padding-left: 13px;
+  padding-top: 25px;
+}
+body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information h4 {
+  margin: 0;
+}
+body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information p {
+  margin: 0;
+}
+body .custom_section {
+  background: url(../image/bacgraund.jpg) no-repeat;
+}
+body .custom_section .custom_section_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 78px;
+  padding-bottom: 65px;
+  display: block;
+}
+body .custom_section .custom_section_content h2 {
+  color: #fff;
+}
+body .custom_section .custom_section_content .custom_section_header {
+  text-align: center;
+}
+body .custom_section .custom_section_content .custom_section_header h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+body .custom_section .custom_section_content .custom_section_header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #ff8b38;
+  position: absolute;
+  margin-top: 40px;
+  position: static;
+  margin: 20px auto;
+}
+body .custom_section .custom_section_content .custom_section_header p {
+  margin: 0;
+  color: #bfbdbe;
+  font-size: 14px;
+}
+body .custom_section .custom_section_content .custom_section_header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 40px;
+  position: static;
+  margin: 20px auto;
+}
+body .custom_section .custom_section_content .custom_section_btn {
+  padding-top: 37px;
+}
+body .custom_section .custom_section_content .custom_section_btn .download {
+  border: 1px solid #fff;
+  width: 67px;
+  padding: 10px 30px;
+  margin: 0 auto;
+}
+body .custom_section .custom_section_content .custom_section_btn .download a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+body .custom_section .custom_section_content .custom_section_btn .download:hover {
+  background-color: #fff;
+}
+body .custom_section .custom_section_content .custom_section_btn .download:hover a {
+  color: #000;
+}

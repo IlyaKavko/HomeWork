@@ -750,4 +750,95 @@ body {
       }
     }
   }
+
+  .testimonials {
+    .testimonials_content {
+      .autoContent();
+      display: block;
+      padding-top: 114px;
+      padding-bottom: 114px;
+      .testimonials_header {
+        .header_standart();
+      }
+      .testimonials_commit {
+        display: flex;
+        padding-top: 60px;
+        justify-content: space-between;
+        .commit {
+          .text_commit {
+            p {
+              width: 273px;
+              border: 1px solid @backgraundColor;
+              background-color: @backgraundColor;
+              padding: 20px 13px;
+              border-radius: 10px;
+              margin-bottom: 20px;
+              position: relative;
+              z-index: 1;
+
+              .default_text();
+              font-style: italic;
+
+              &::after {
+                content: "";
+                position: absolute;
+                left: 20px;
+                bottom: -20px;
+                border: 10px solid transparent;
+                border-top: 10px solid @backgraundColor;
+              }
+            }
+          }
+        }
+        .avatar {
+          img {
+            width: 70px;
+          }
+          display: flex;
+          .brief_information {
+            flex-direction: column;
+            padding-left: 13px;
+            padding-top: 25px;
+
+            h4 {
+              margin: 0;
+            }
+            p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .custom_section {
+    .headerBackground(url(../image/bacgraund.jpg));
+    .custom_section_content {
+      .autoContent();
+      padding-top: 78px;
+      padding-bottom: 65px;
+      h2 {
+        color: @wite;
+      }
+      display: block;
+      .custom_section_header {
+        .header_standart();
+        h2 {
+          &::after {
+            .divider();
+            position: static;
+            margin: 20px auto;
+          }
+        }
+      }
+      .custom_section_btn {
+        padding-top: 37px;
+        .download {
+          .btnDownload();
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }
