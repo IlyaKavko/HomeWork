@@ -421,6 +421,7 @@ body .brand_bar .brand_bar_content .brand_bar_social a:hover {
     text-align: center;
   }
   body .brand_bar .brand_bar_content .brand_bar_social {
+    text-align: center;
     padding: 15px 0;
     margin: 0;
   }
@@ -1222,6 +1223,10 @@ body .testimonials .testimonials_content .testimonials_commit .avatar .brief_inf
   body .testimonials .testimonials_content .testimonials_commit {
     display: block;
     padding-top: 50px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .commit {
+    width: 270px;
+    margin: 0 auto;
   }
   body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p {
     width: 239px;
