@@ -1176,9 +1176,66 @@ body .testimonials .testimonials_content .testimonials_commit .avatar .brief_inf
 }
 body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information h4 {
   margin: 0;
+  font-size: 20px;
 }
 body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information p {
   margin: 0;
+  color: #bfbdbe;
+  font-size: 14px;
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p {
+    width: 220px;
+  }
+}
+@media (min-width: 750px) and (max-width: 999px) {
+  body .testimonials .testimonials_content {
+    width: 90%;
+  }
+  body .testimonials .testimonials_content .testimonials_header h2 {
+    font-size: 26px;
+  }
+  body .testimonials .testimonials_content .testimonials_header p {
+    font-size: 12px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p {
+    width: 180px;
+    font-size: 12px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information h4 {
+    font-size: 16px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 300px) and (max-width: 749px) {
+  body .testimonials .testimonials_content {
+    width: 90%;
+  }
+  body .testimonials .testimonials_content .testimonials_header h2 {
+    font-size: 26px;
+  }
+  body .testimonials .testimonials_content .testimonials_header p {
+    font-size: 12px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit {
+    display: block;
+    padding-top: 50px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .commit .text_commit p {
+    width: 239px;
+    font-size: 12px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .avatar img {
+    width: 60px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information h4 {
+    font-size: 16px;
+  }
+  body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information p {
+    font-size: 12px;
+  }
 }
 body .custom_section {
   background: url(../image/bacgraund.jpg) no-repeat;
@@ -1190,9 +1247,6 @@ body .custom_section .custom_section_content {
   padding-top: 78px;
   padding-bottom: 65px;
   display: block;
-}
-body .custom_section .custom_section_content h2 {
-  color: #fff;
 }
 body .custom_section .custom_section_content .custom_section_header {
   text-align: center;
@@ -1217,6 +1271,9 @@ body .custom_section .custom_section_content .custom_section_header p {
   margin: 0;
   color: #bfbdbe;
   font-size: 14px;
+}
+body .custom_section .custom_section_content .custom_section_header h2 {
+  color: #fff;
 }
 body .custom_section .custom_section_content .custom_section_header h2::after {
   content: "";
@@ -1248,4 +1305,249 @@ body .custom_section .custom_section_content .custom_section_btn .download:hover
 }
 body .custom_section .custom_section_content .custom_section_btn .download:hover a {
   color: #000;
+}
+@media (min-width: 750px) and (max-width: 999px) {
+  body .custom_section .custom_section_content .custom_section_header h2 {
+    font-size: 26px;
+  }
+  body .custom_section .custom_section_content .custom_section_header p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 300px) and (max-width: 749px) {
+  body .custom_section .custom_section_content {
+    padding-top: 60px;
+    padding-bottom: 51px;
+  }
+  body .custom_section .custom_section_content .custom_section_header h2 {
+    font-size: 26px;
+  }
+  body .custom_section .custom_section_content .custom_section_header p {
+    font-size: 12px;
+  }
+}
+body .contact_us .contact_us_content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  display: block;
+  padding-top: 114px;
+  padding-bottom: 114px;
+}
+body .contact_us .contact_us_content .contact_us_header {
+  text-align: center;
+}
+body .contact_us .contact_us_content .contact_us_header h2 {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
+}
+body .contact_us .contact_us_content .contact_us_header h2::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 2px;
+  background-color: #ff8b38;
+  position: absolute;
+  margin-top: 40px;
+  position: static;
+  margin: 20px auto;
+}
+body .contact_us .contact_us_content .contact_us_header p {
+  margin: 0;
+  color: #bfbdbe;
+  font-size: 14px;
+}
+body .contact_us .contact_us_content .contant_us_forma {
+  padding-top: 95px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field {
+  display: flex;
+  justify-content: space-between;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma {
+  width: 47%;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box {
+  position: relative;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box:not(:last-child) {
+  padding-bottom: 49px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box input {
+  border: none;
+  border-bottom: 1px solid #bfbdbe;
+  width: 98%;
+  outline: none;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box input:focus + label {
+  top: -30px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box label {
+  display: flex;
+  position: absolute;
+  top: 0;
+  transition: top 0.5s ease;
+  left: 12px;
+  color: #bfbdbe;
+  z-index: 1;
+  font-size: 14px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box label:focus {
+  outline: none;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message {
+  width: 47%;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box {
+  position: relative;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box:not(:last-child) {
+  padding-bottom: 51px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box textarea {
+  border: none;
+  border-bottom: 1px solid #bfbdbe;
+  width: 98%;
+  outline: none;
+  resize: none;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box textarea:focus + label {
+  top: -30px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box label {
+  display: flex;
+  position: absolute;
+  top: 0;
+  transition: top 0.5s ease;
+  left: 12px;
+  color: #bfbdbe;
+  z-index: 1;
+  font-size: 14px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box label:focus {
+  outline: none;
+}
+body .contact_us .contact_us_content .contant_us_forma form .btn {
+  padding-top: 42px;
+  width: 12%;
+  margin: 0 auto;
+}
+body .contact_us .contact_us_content .contant_us_forma form .btn button {
+  border: none;
+  background-color: #ff8b38;
+  width: 100%;
+  padding: 25px 0;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 5px;
+}
+body .contact_us .contact_us_content .contant_us_forma form .btn button:focus {
+  outline: none;
+}
+body .contact_us .contact_us_content .contant_us_forma form .btn button:hover {
+  background-color: #d2600f;
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  body .contact_us .contact_us_content .contant_us_forma form .btn {
+    width: 16%;
+  }
+}
+@media (min-width: 750px) and (max-width: 999px) {
+  body .contact_us .contact_us_content {
+    width: 90%;
+  }
+  body .contact_us .contact_us_content .contact_us_header h2 {
+    font-size: 26px;
+  }
+  body .contact_us .contact_us_content .contact_us_header p {
+    font-size: 12px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma {
+    padding-top: 79px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box label {
+    font-size: 12px;
+    left: 9px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box label {
+    font-size: 12px;
+    left: 9px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .btn {
+    width: 21%;
+  }
+}
+@media (min-width: 300px) and (max-width: 749px) {
+  body .contact_us .contact_us_content {
+    width: 90%;
+    padding-top: 78px;
+    padding-bottom: 78px;
+  }
+  body .contact_us .contact_us_content .contact_us_header h2 {
+    font-size: 26px;
+  }
+  body .contact_us .contact_us_content .contact_us_header p {
+    font-size: 12px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma {
+    padding-top: 79px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field {
+    display: block;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_forma {
+    width: 100%;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box label {
+    font-size: 12px;
+    left: 9px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_message {
+    width: 100%;
+    margin-top: 40px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .field .user_message .text_box label {
+    font-size: 12px;
+    left: 9px;
+  }
+  body .contact_us .contact_us_content .contant_us_forma form .btn {
+    width: 51%;
+  }
+}
+body .footer {
+  background-color: #000;
+  text-align: center;
+}
+body .footer .footer_content {
+  width: 90%;
+  margin: 0 auto;
+}
+body .footer .footer_content .footer_social {
+  padding-top: 40px;
+}
+body .footer .footer_content .footer_social a {
+  font-size: 24px;
+  color: #bfbdbe;
+}
+body .footer .footer_content .footer_social a:not(:last-child) {
+  padding-right: 31px;
+}
+body .footer .footer_content .footer_social a:hover {
+  color: #ff8b38;
+}
+body .footer .footer_content .footer_copyright {
+  padding: 15px 0;
+}
+body .footer .footer_content .footer_copyright p {
+  margin: 0;
+  color: #bfbdbe;
+  font-size: 12px;
+}
+@media (min-width: 300px) and (max-width: 749px) {
+  body .footer .footer_content .footer_social a:not(:last-child) {
+    padding-right: 15px;
+  }
 }

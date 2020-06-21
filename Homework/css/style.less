@@ -791,10 +791,10 @@ body {
           }
         }
         .avatar {
+          display: flex;
           img {
             width: 70px;
           }
-          display: flex;
           .brief_information {
             flex-direction: column;
             padding-left: 13px;
@@ -802,9 +802,98 @@ body {
 
             h4 {
               margin: 0;
+              font-size: 20px;
             }
             p {
               margin: 0;
+              .default_text();
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1250px) {
+      .testimonials_content {
+        .testimonials_commit {
+          .commit {
+            .text_commit {
+              p {
+                width: 220px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 750px) and (max-width: 999px) {
+      .testimonials_content {
+        width: 90%;
+        .testimonials_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .testimonials_commit {
+          .commit {
+            .text_commit {
+              p {
+                width: 180px;
+                font-size: 12px;
+              }
+            }
+          }
+          .avatar {
+            .brief_information {
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .testimonials_content {
+        width: 90%;
+        .testimonials_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .testimonials_commit {
+          display: block;
+          padding-top: 50px;
+          .commit {
+            .text_commit {
+              p {
+                width: 239px;
+                font-size: 12px;
+              }
+            }
+          }
+          .avatar {
+            img {
+              width: 60px;
+            }
+            .brief_information {
+              h4 {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+              }
             }
           }
         }
@@ -818,13 +907,13 @@ body {
       .autoContent();
       padding-top: 78px;
       padding-bottom: 65px;
-      h2 {
-        color: @wite;
-      }
+
       display: block;
       .custom_section_header {
         .header_standart();
         h2 {
+          color: @wite;
+
           &::after {
             .divider();
             position: static;
@@ -837,6 +926,245 @@ body {
         .download {
           .btnDownload();
           margin: 0 auto;
+        }
+      }
+    }
+
+    @media (min-width: 750px) and (max-width: 999px) {
+      .custom_section_content {
+        .custom_section_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .custom_section_content {
+        padding-top: 60px;
+        padding-bottom: 51px;
+        .custom_section_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact_us {
+    .contact_us_content {
+      .autoContent();
+      display: block;
+      padding-top: 114px;
+      padding-bottom: 114px;
+      .contact_us_header {
+        .header_standart();
+      }
+      .contant_us_forma {
+        padding-top: 95px;
+        form {
+          .field {
+            display: flex;
+            justify-content: space-between;
+            .user_forma {
+              width: 47%;
+              .forma(49px);
+            }
+            .user_message {
+              width: 47%;
+              .text_box {
+                position: relative;
+
+                &:not(:last-child) {
+                  padding-bottom: 51px;
+                }
+
+                textarea {
+                  border: none;
+                  border-bottom: 1px solid @text_color;
+                  width: 100% - 2%;
+                  outline: none;
+                  resize: none;
+                  &:focus + label {
+                    top: -30px;
+                  }
+                }
+
+                label {
+                  display: flex;
+                  position: absolute;
+                  top: 0;
+                  transition: top 0.5s ease;
+                  left: 12px;
+                  color: @text_color;
+                  z-index: 1;
+                  font-size: 14px;
+
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .btn {
+            padding-top: 42px;
+            width: 12%;
+            margin: 0 auto;
+            button {
+              .btnForma();
+              padding: 16px;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1000px) and (max-width: 1250px) {
+      .contact_us_content {
+        .contant_us_forma {
+          form {
+            .btn {
+              width: 16%;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 750px) and (max-width: 999px) {
+      .contact_us_content {
+        width: 90%;
+        .contact_us_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .contant_us_forma {
+          padding-top: 79px;
+          form {
+            .field {
+              .user_forma {
+                .text_box {
+                  label {
+                    font-size: 12px;
+                    left: 9px;
+                  }
+                }
+              }
+              .user_message {
+                .text_box {
+                  label {
+                    font-size: 12px;
+                    left: 9px;
+                  }
+                }
+              }
+            }
+            .btn {
+              width: 21%;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .contact_us_content {
+        width: 90%;
+        padding-top: 78px;
+        padding-bottom: 78px;
+        .contact_us_header {
+          h2 {
+            font-size: 26px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+        .contant_us_forma {
+          padding-top: 79px;
+          form {
+            .field {
+              display: block;
+              .user_forma {
+                width: 100%;
+                .text_box {
+                  label {
+                    font-size: 12px;
+                    left: 9px;
+                  }
+                }
+              }
+              .user_message {
+                width: 100%;
+                margin-top: 40px;
+                .text_box {
+                  label {
+                    font-size: 12px;
+                    left: 9px;
+                  }
+                }
+              }
+            }
+            .btn {
+              width: 51%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: @black;
+    text-align: center;
+    .footer_content {
+      width: 90%;
+        margin: 0 auto;
+      .footer_social {
+        padding-top: 40px;
+        a {
+          &:not(:last-child) {
+            padding-right: 31px;
+          }
+          font-size: 24px;
+          color: @text_color;
+          &:hover {
+            color: @orange;
+          }
+        }
+      }
+      .footer_copyright {
+        padding: 15px 0;
+        p {
+          margin: 0;
+          .default_text(12px);
+        }
+      }
+    }
+
+    @media (min-width: 300px) and (max-width: 749px) {
+      .footer_content {
+        .footer_social {
+          a {
+            &:not(:last-child) {
+              padding-right: 15px;
+            }
+          }
         }
       }
     }
