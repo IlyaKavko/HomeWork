@@ -1,0 +1,408 @@
+.mediaNavs() {
+  .list {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 22px;
+    border-top: 2px solid @text_color;
+    border-bottom: 2px solid @text_color;
+    transition: border-top 0.05s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0px;
+      width: 100%;
+      border-top: 2px solid @text_color;
+    }
+
+    &:hover {
+      &::before {
+        content: "";
+        border-top: 2px solid @orange;
+        transform: rotate(-45deg);
+      }
+      border: none;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 100%;
+        border-top: 2px solid @orange;
+        transform: rotate(45deg);
+      }
+
+      ul {
+        display: block;
+        position: absolute;
+        left: -94px;
+        top: 43px;
+        border: 1px solid @black;
+        background-color: @black;
+        li {
+          padding-bottom: 10px;
+          padding-right: 47px;
+        }
+      }
+    }
+
+    ul {
+      display: none;
+    }
+  }
+}
+
+.mediaHeader(@content:80%, @widthH:100%, @imgWidth:175px, @fsH2:25px, @HWidth:54px, @margiH: 20px,
+  @textH:14px, @paddTopP:25px, @formP:18px, @formPPadd:35px, @formPaddOne:30px, @formPaddTwo:20px, 
+  @textBoxPaddBot:41px, @lableFonS:15px, @lablePothLeft:12px, @btnPadd:25px, @btnFonS:15px) {
+  .header_content {
+    width: @content;
+
+    .content_header {
+      width: @widthH;
+
+      img {
+        width: @imgWidth;
+      }
+
+      h2 {
+        font-size: @fsH2;
+
+        &::after {
+          width: @HWidth;
+          margin-top: @margiH;
+        }
+      }
+      p {
+        font-size: @textH;
+        padding-top: @paddTopP;
+      }
+    }
+
+    .header_forma {
+      form {
+        p {
+          font-size: @formP;
+          padding: 20px 20px 20px @formPPadd;
+        }
+        .field {
+          padding: @formPaddOne @formPaddTwo;
+
+          .text_box {
+            &:not(:last-child) {
+              padding-bottom: @textBoxPaddBot;
+            }
+
+            label {
+              font-size: @lableFonS;
+              left: 9px;
+            }
+          }
+        }
+        .btn {
+          button {
+            font-size: @btnFonS;
+            padding: @btnPadd 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header_standart_media(@h2FontSize: 26px, @pFontSize: 12px,) {
+  h2 {
+    font-size: @h2FontSize;
+    &::after {
+      margin: 10px auto;
+    }
+  }
+  p {
+    font-size: @pFontSize;
+  }
+}
+
+.mediaBrandBar(@content: 90%, @BrandBarTextFontSH: 17px, @BrandBarTextFontSP: 10px, @BrandBarSocialMargin: 30px, 
+  @BrandBarSocialAPadd: 32px, @BrandBarSocialAFontS: 28px) {
+  .brand_bar_content {
+    width: 90%;
+    justify-content: space-between;
+    .brand_bar_text {
+      h4 {
+        font-size: @BrandBarTextFontSH;
+      }
+
+      p {
+        font-size: @BrandBarTextFontSP;
+      }
+    }
+    .brand_bar_social {
+      margin-top: @BrandBarSocialMargin;
+      a {
+        &:not(:last-child) {
+          padding-right: @BrandBarSocialAPadd;
+        }
+        font-size: @BrandBarSocialAFontS;
+      }
+    }
+  }
+}
+
+.featuresMedia(@content: 80%, @inputPadd: 45px, @inputMargin: 122px, @tabTextFontSize: 14px, @imageWidth: 30%,) {
+  .features_content {
+    width: @content;
+    .features_tab {
+      .tab_one {
+        input {
+          padding: @inputPadd;
+
+          &:checked ~ .tab_text {
+            margin-left: @inputMargin;
+          }
+        }
+
+        .tab_text {
+          p {
+            font-size: @tabTextFontSize;
+          }
+        }
+      }
+
+      .tab_two {
+        input {
+          padding: @inputPadd;
+
+          &:checked ~ .tab_text {
+            margin-left: @inputMargin;
+          }
+        }
+      }
+
+      .tab_tree {
+        input {
+          padding: @inputPadd;
+
+          &:checked ~ .tab_text {
+            margin-left: @inputMargin;
+          }
+        }
+      }
+    }
+
+    .features_img {
+      max-width: @imageWidth;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tabMedia(@tabWidth: 35%, @tabWidthLast: 27%, @inputWidth: 100%, @tabTextPadding: 200px) {
+  .tab_one {
+    display: block;
+    width: @tabWidth;
+    input {
+      &:checked ~ .tab_text {
+        width: @inputWidth;
+      }
+    }
+    .tab_text {
+      padding-top: @tabTextPadding;
+    }
+  }
+
+  .tab_two {
+    display: block;
+    width: @tabWidth;
+    input {
+      &:checked ~ .tab_text {
+        width: @inputWidth;
+      }
+    }
+    .tab_text {
+      padding-top: @tabTextPadding;
+    }
+  }
+
+  .tab_tree {
+    display: block;
+    width: @tabWidthLast;
+    input {
+      &:checked ~ .tab_text {
+        width: @inputWidth;
+      }
+    }
+
+    .tab_text {
+      padding-top: @tabTextPadding;
+    }
+  }
+}
+
+.ourProcessMedia() {
+  .our_process_content {
+    width: 90%;
+    .our_process_header {
+      .header_standart_media();
+    }
+    .our_process_text {
+      padding-top: 63px;
+      .our_process_box {
+        h4 {
+          font-size: 15px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.pricingMedia(@content: 90%, @slotPadding: 63px, @slotWidth: 334px, 
+  @slotFontSize1: 12px, @slotFontSize2: 15px, @slotFontSize3: 84px) {
+  .pricing_content {
+    width: 90%;
+    .pricing_header {
+      .header_standart_media();
+    }
+    .pricing_slot {
+      padding-top: @slotPadding;
+      .pricing_slot_one {
+        width: @slotWidth;
+        ul {
+          li {
+            font-size: @slotFontSize1;
+            &:nth-child(1) {
+              font-size: @slotFontSize2;
+            }
+            &:nth-child(2) {
+              font-size: @slotFontSize3;
+            }
+          }
+        }
+      }
+      .pricing_slot_two {
+        width: @slotWidth;
+        ul {
+          li {
+            font-size: @slotFontSize1;
+            &:nth-child(1) {
+              font-size: @slotFontSize2;
+            }
+            &:nth-child(2) {
+              font-size: @slotFontSize3;
+            }
+          }
+        }
+      }
+      .pricing_slot_tree {
+        width: @slotWidth;
+        ul {
+          li {
+            font-size: @slotFontSize1;
+            &:nth-child(1) {
+              font-size: @slotFontSize2;
+            }
+            &:nth-child(2) {
+              font-size: @slotFontSize3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.pricingSlotMedia() {
+  .pricing_slot_one {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .pricing_slot_two {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .pricing_slot_tree {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.testimonialsMedia(@content: 90%, @textCommitWidth: 180px, @textCommitFontSize: 12px, 
+  @avatarH4: 16px, @avatarFontSize: 12px) {
+  .testimonials_content {
+    width: @content;
+    .testimonials_header {
+      .header_standart_media();
+    }
+    .testimonials_commit {
+      .commit {
+        .text_commit {
+          p {
+            width: @textCommitWidth;
+            font-size: @textCommitFontSize;
+          }
+        }
+      }
+      .avatar {
+        .brief_information {
+          h4 {
+            font-size: @avatarH4;
+          }
+          p {
+            font-size: @avatarFontSize;
+          }
+        }
+      }
+    }
+  }
+}
+
+.customSectionMedia() {
+  .custom_section_content {
+    .custom_section_header {
+      .header_standart_media();
+    }
+  }
+}
+
+.contactUsMedia(@btnWidth: 21%) {
+  .contact_us_content {
+    width: 90%;
+    .contact_us_header {
+      .header_standart_media();
+    }
+    .contant_us_forma {
+      padding-top: 79px;
+      form {
+        .field {
+          .user_forma {
+            .text_box {
+              label {
+                font-size: 12px;
+                left: 9px;
+              }
+            }
+          }
+          .user_message {
+            .text_box {
+              label {
+                font-size: 12px;
+                left: 9px;
+              }
+            }
+          }
+        }
+        .btn {
+          width: @btnWidth;
+        }
+      }
+    }
+  }
+}

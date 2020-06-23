@@ -93,123 +93,24 @@
   }
 }
 
-.mediaHeader(@content:80%, @widthH:100%, @imgWidth:175px, @fsH2:25px, @HWidth:54px, @margiH: 20px,
-@textH:14px, @paddTopP:25px, @formP:18px, @formPPadd:35px, @formPaddOne:30px, @formPaddTwo:20px, 
-@textBoxPaddBot:41px, @lableFonS:15px, @lablePothLeft:12px, @btnPadd:25px, @btnFonS:15px) {
-  .header_content {
-    width: @content;
-
-    .content_header {
-      width: @widthH;
-
-      img {
-        width: @imgWidth;
-      }
-
-      h2 {
-        font-size: @fsH2;
-
-        &::after {
-          width: @HWidth;
-          margin-top: @margiH;
-        }
-      }
-      p {
-        font-size: @textH;
-        padding-top: @paddTopP;
-      }
-    }
-
-    .header_forma {
-      form {
-        p {
-          font-size: @formP;
-          padding: 20px 20px 20px @formPPadd;
-        }
-        .field {
-          padding: @formPaddOne @formPaddTwo;
-
-          .text_box {
-            &:not(:last-child) {
-              padding-bottom: @textBoxPaddBot;
-            }
-
-            label {
-              font-size: @lableFonS;
-              left: 9px;
-            }
-          }
-        }
-        .btn {
-          button {
-            font-size: @btnFonS;
-            padding: @btnPadd 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-.mediaNavs() {
-  .list {
-    position: relative;
-    display: block;
-    width: 40px;
-    height: 22px;
-    border-top: 2px solid @text_color;
-    border-bottom: 2px solid @text_color;
-    transition: border-top 0.05s ease;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 0px;
-      width: 100%;
-      border-top: 2px solid @text_color;
-    }
-
-    &:hover {
-      &::before {
-        content: "";
-        border-top: 2px solid @orange;
-        transform: rotate(-45deg);
-      }
-      border: none;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 0px;
-        width: 100%;
-        border-top: 2px solid @orange;
-        transform: rotate(45deg);
-      }
-
-      ul {
-        display: block;
-        position: absolute;
-        left: -94px;
-        top: 43px;
-        border: 1px solid @black;
-        background-color: @black;
-        li {
-          padding-bottom: 10px;
-          padding-right: 47px;
-        }
-      }
-    }
-
-    ul {
-      display: none;
-    }
-  }
-}
-
 .radio() {
   display: flex;
+  .tab_text {
+    display: none;
+    padding-top: 114px;
+    h4 {
+      font-size: 20px;
+      padding-bottom: 30px;
+      margin: 0;
+    }
+    p {
+      .default_text();
+    }
+    .download {
+      .btnDownload(@orange, @hover_color, @wite);
+      background-color: @orange;
+    }
+  }
   input {
     appearance: none;
     border: 1px solid @black_two;

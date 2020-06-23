@@ -1,0 +1,306 @@
+@import "./media-mixin.less";
+
+.nav_media() {
+  @media (min-width: 300px) and (max-width: 800px) {
+    .navs_content {
+      width: 90%;
+      padding: 14px;
+      .mediaNavs();
+    }
+  }
+}
+
+.header_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .mediaHeader();
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .mediaHeader(90%, 100%, 25%, 19px, 44px, 20px, 12px, 25px, 13px, 15px, 20px, 10px, 31px, 11px, 9px, 18px, 13px);
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .header_content {
+      display: block;
+      padding-top: 70px;
+      padding-bottom: 69px;
+      .content_header {
+        text-align: center;
+        h2 {
+          width: 100%;
+          margin-bottom: 0;
+          &::after {
+            position: static;
+            margin: 0 auto;
+          }
+        }
+
+        p {
+          margin-top: 0;
+          width: 100%;
+        }
+
+        .download {
+          margin: 0 auto;
+        }
+      }
+      .header_forma {
+        width: 100%;
+        margin-top: 20px;
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .mediaHeader(95%, 100%, 175px, 19px, 40px, 10px, 12px, 15px, 16px, 15px, 20px, 10px, 31px, 14px, 9px, 18px, 13px);
+  }
+}
+
+.brand_bar_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .brand_bar_content {
+      .brand_bar_social {
+        a {
+          &:not(:last-child) {
+            padding-right: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .mediaBrandBar();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .brand_bar_content {
+      display: block;
+      .brand_bar_text {
+        width: 100%;
+        h4 {
+          margin-top: 0;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+      .brand_bar_social {
+        text-align: center;
+      }
+    }
+    .mediaBrandBar(@BrandBarSocialAPadd: 11px, @BrandBarSocialMargin: 15px);
+  }
+}
+
+.features_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .featuresMedia();
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .featuresMedia(@content: 90%, @tabTextFontSize: 12px);
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .features_content {
+      display: block;
+      .features_tab {
+        display: flex;
+        max-width: 397px;
+        margin: 0 auto;
+        justify-content: space-between;
+        .tab_one {
+          .tab_text {
+            max-width: 397px;
+            margin: 0 auto;
+            h4 {
+              padding-top: 20px;
+              padding-bottom: 0;
+              text-align: center;
+            }
+            p {
+              text-align: center;
+            }
+
+            .download {
+              margin: 0 auto;
+            }
+          }
+        }
+
+        .tabMedia();
+      }
+
+      .features_img {
+        margin: 0 auto;
+        padding-top: 256px;
+      }
+    }
+
+    .featuresMedia(@content: 90%, @inputPadd:40px,@inputMargin: 0, @tabTextFontSize: 12px, @imageWidth: 397px);
+  }
+}
+
+.our_process_media() {
+  @media (min-width: 750px) and (max-width: 999px) {
+    .ourProcessMedia();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .our_process_content {
+      .our_process_text {
+        display: block;
+        width: 270px;
+        margin: 0 auto;
+        .our_process_box {
+          &:not(:first-child) {
+            padding: 0;
+          }
+
+          img {
+            width: 20%;
+          }
+        }
+      }
+    }
+    .ourProcessMedia();
+  }
+}
+
+.pricing_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .pricing_content {
+      .pricing_slot {
+        .pricing_slot_one {
+          width: 334px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .pricingMedia();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .pricing_content {
+      .pricing_slot {
+        display: block;
+        .pricingSlotMedia();
+      }
+    }
+
+    .pricingMedia(@slotWidth: 270px);
+  }
+}
+
+.testimonials_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .testimonials_content {
+      .testimonials_commit {
+        .commit {
+          .text_commit {
+            p {
+              width: 220px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .testimonialsMedia();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .testimonials_content {
+      .testimonials_commit {
+        display: block;
+        padding-top: 50px;
+        .commit {
+          width: 270px;
+          margin: 0 auto;
+        }
+        .avatar {
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+    .testimonialsMedia(@textCommitWidth: 239px);
+  }
+}
+
+.custom_section_media() {
+  @media (min-width: 750px) and (max-width: 999px) {
+    .customSectionMedia();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .custom_section_content {
+      padding-top: 60px;
+      padding-bottom: 51px;
+    }
+    .customSectionMedia();
+  }
+}
+
+.contact_us_media() {
+  @media (min-width: 1000px) and (max-width: 1250px) {
+    .contact_us_content {
+      .contant_us_forma {
+        form {
+          .btn {
+            width: 16%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 750px) and (max-width: 999px) {
+    .contactUsMedia();
+  }
+
+  @media (min-width: 300px) and (max-width: 749px) {
+    .contact_us_content {
+      padding-top: 78px;
+      padding-bottom: 78px;
+      .contant_us_forma {
+        padding-top: 79px;
+        form {
+          .field {
+            display: block;
+            .user_forma {
+              width: 100%;
+            }
+            .user_message {
+              width: 100%;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+    .contactUsMedia(@btnWidth: 51%)
+  }
+}
+
+.footer_media() {
+  @media (min-width: 300px) and (max-width: 749px) {
+    .footer_content {
+      .footer_social {
+        a {
+          &:not(:last-child) {
+            padding-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
