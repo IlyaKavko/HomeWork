@@ -12,6 +12,7 @@ body .navs .navs_content {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
   padding: 20px;
@@ -22,6 +23,8 @@ body .navs .navs_content .list ul {
   padding-top: 7px;
 }
 body .navs .navs_content .list ul li {
+  font-family: "Open Sans Semibold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
   list-style: none;
   cursor: pointer;
 }
@@ -94,9 +97,11 @@ body .header_conteiner .header_content {
   margin: 0 auto;
   display: flex;
   padding-top: 165px;
-  padding-bottom: 179px;
+  padding-bottom: 173px;
 }
 body .header_conteiner .header_content .content_header h2 {
+  font-family: "Raleway";
+  font-weight: 100;
   font-size: 36px;
   width: 79%;
   color: #fff;
@@ -111,6 +116,7 @@ body .header_conteiner .header_content .content_header h2::after {
   margin-top: 40px;
 }
 body .header_conteiner .header_content .content_header p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 16px;
   width: 79%;
@@ -122,6 +128,7 @@ body .header_conteiner .header_content .content_header .download {
   padding: 10px 30px;
 }
 body .header_conteiner .header_content .content_header .download a {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
@@ -136,9 +143,11 @@ body .header_conteiner .header_forma {
   border-radius: 5px;
   background-color: white;
   overflow: hidden;
-  width: 50%;
+  width: 70%;
 }
 body .header_conteiner .header_forma form p {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   border: 1px solid #f5f5f5;
   background-color: #f5f5f5;
   padding: 20px 20px 20px 35px;
@@ -168,6 +177,7 @@ body .header_conteiner .header_forma form .field .text_box input:focus + label {
   top: -30px;
 }
 body .header_conteiner .header_forma form .field .text_box label {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   display: flex;
   position: absolute;
   top: 0;
@@ -181,6 +191,8 @@ body .header_conteiner .header_forma form .field .text_box label:focus {
   outline: none;
 }
 body .header_conteiner .header_forma form .btn button {
+  font-family: "Open Sans Semibold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
   border: none;
   background-color: #ff8b38;
   width: 100%;
@@ -363,6 +375,7 @@ body .brand_bar .brand_bar_content .brand_bar_text h4 {
 }
 body .brand_bar .brand_bar_content .brand_bar_text p {
   margin-top: 5px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -467,6 +480,7 @@ body .features .features_content .features_tab .tab_one .tab_text h4 {
   margin: 0;
 }
 body .features .features_content .features_tab .tab_one .tab_text p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -477,6 +491,7 @@ body .features .features_content .features_tab .tab_one .tab_text .download {
   background-color: #ff8b38;
 }
 body .features .features_content .features_tab .tab_one .tab_text .download a {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
@@ -532,6 +547,7 @@ body .features .features_content .features_tab .tab_two .tab_text h4 {
   margin: 0;
 }
 body .features .features_content .features_tab .tab_two .tab_text p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -542,6 +558,7 @@ body .features .features_content .features_tab .tab_two .tab_text .download {
   background-color: #ff8b38;
 }
 body .features .features_content .features_tab .tab_two .tab_text .download a {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
@@ -597,6 +614,7 @@ body .features .features_content .features_tab .tab_tree .tab_text h4 {
   margin: 0;
 }
 body .features .features_content .features_tab .tab_tree .tab_text p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -607,6 +625,7 @@ body .features .features_content .features_tab .tab_tree .tab_text .download {
   background-color: #ff8b38;
 }
 body .features .features_content .features_tab .tab_tree .tab_text .download a {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
@@ -816,6 +835,8 @@ body .our_process .our_process_content .our_process_header {
 }
 body .our_process .our_process_content .our_process_header h2 {
   text-transform: uppercase;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   font-size: 36px;
   margin: 0;
 }
@@ -832,6 +853,7 @@ body .our_process .our_process_content .our_process_header h2::after {
 }
 body .our_process .our_process_content .our_process_header p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -847,6 +869,7 @@ body .our_process .our_process_content .our_process_text .our_process_box h4 {
   font-size: 20px;
 }
 body .our_process .our_process_content .our_process_text .our_process_box p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -923,6 +946,8 @@ body .pricing .pricing_content .pricing_header {
 }
 body .pricing .pricing_content .pricing_header h2 {
   text-transform: uppercase;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   font-size: 36px;
   margin: 0;
 }
@@ -939,6 +964,7 @@ body .pricing .pricing_content .pricing_header h2::after {
 }
 body .pricing .pricing_content .pricing_header p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -1220,6 +1246,8 @@ body .testimonials .testimonials_content .testimonials_header {
 }
 body .testimonials .testimonials_content .testimonials_header h2 {
   text-transform: uppercase;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   font-size: 36px;
   margin: 0;
 }
@@ -1236,6 +1264,7 @@ body .testimonials .testimonials_content .testimonials_header h2::after {
 }
 body .testimonials .testimonials_content .testimonials_header p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -1253,6 +1282,7 @@ body .testimonials .testimonials_content .testimonials_commit .commit .text_comm
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
   font-style: italic;
@@ -1282,6 +1312,7 @@ body .testimonials .testimonials_content .testimonials_commit .avatar .brief_inf
 }
 body .testimonials .testimonials_content .testimonials_commit .avatar .brief_information p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -1365,6 +1396,8 @@ body .custom_section .custom_section_content .custom_section_header {
 }
 body .custom_section .custom_section_content .custom_section_header h2 {
   text-transform: uppercase;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   font-size: 36px;
   margin: 0;
 }
@@ -1381,6 +1414,7 @@ body .custom_section .custom_section_content .custom_section_header h2::after {
 }
 body .custom_section .custom_section_content .custom_section_header p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -1408,6 +1442,7 @@ body .custom_section .custom_section_content .custom_section_btn .download {
   margin: 0 auto;
 }
 body .custom_section .custom_section_content .custom_section_btn .download a {
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
   text-decoration: none;
   color: #fff;
@@ -1457,6 +1492,8 @@ body .contact_us .contact_us_content .contact_us_header {
 }
 body .contact_us .contact_us_content .contact_us_header h2 {
   text-transform: uppercase;
+  font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
   font-size: 36px;
   margin: 0;
 }
@@ -1473,6 +1510,7 @@ body .contact_us .contact_us_content .contact_us_header h2::after {
 }
 body .contact_us .contact_us_content .contact_us_header p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 14px;
 }
@@ -1502,6 +1540,7 @@ body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .
   top: -30px;
 }
 body .contact_us .contact_us_content .contant_us_forma form .field .user_forma .text_box label {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   display: flex;
   position: absolute;
   top: 0;
@@ -1552,6 +1591,8 @@ body .contact_us .contact_us_content .contant_us_forma form .btn {
   margin: 0 auto;
 }
 body .contact_us .contact_us_content .contant_us_forma form .btn button {
+  font-family: "Open Sans Semibold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
   border: none;
   background-color: #ff8b38;
   width: 100%;
@@ -1559,7 +1600,6 @@ body .contact_us .contact_us_content .contant_us_forma form .btn button {
   color: #fff;
   text-transform: capitalize;
   cursor: pointer;
-  padding: 16px;
   border-radius: 5px;
 }
 body .contact_us .contact_us_content .contant_us_forma form .btn button:focus {
@@ -1672,6 +1712,7 @@ body .footer .footer_content .footer_copyright {
 }
 body .footer .footer_content .footer_copyright p {
   margin: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #bfbdbe;
   font-size: 12px;
 }
